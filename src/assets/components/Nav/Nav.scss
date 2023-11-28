@@ -1,0 +1,62 @@
+@import "../../styles/General.scss";
+
+nav {
+  display: flex;
+  height: 100%;
+  margin-top: 3px;
+  margin-right: 87px;
+  justify-content: center;
+  gap: 30px;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1280px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+  }
+
+  a {
+    max-width: fit-content;
+    @include font-styling(
+      $inter-font-family,
+      16px,
+      500,
+      normal,
+      0,
+      $main-font-color,
+      none
+    );
+    text-decoration: none;
+    border-bottom: solid 1px transparent;
+    transition: all 0.5s;
+  }
+
+  @media screen and (max-width: 768px) {
+    a {
+      @include font-styling(
+        $inter-font-family,
+        12px,
+        500,
+        normal,
+        0,
+        $main-font-color,
+        none
+      );
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (any-hover: hover) {
+  nav a:hover {
+    border-bottom: solid 1px $main-font-color;
+    color: $nav-links-hover;
+  }
+}
