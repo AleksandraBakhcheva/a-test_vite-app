@@ -1,10 +1,11 @@
 /* colors */
 $nav-links-hover: #8434ba;
-$main-bg-color: #000000;
+$main-bg-color: #0e1014;
 $main-font-color: #e4e5ea;
 $purple-light-bg-color: #833ab4;
 $red-light-bg-color: #961a1a;
 $button-bg-color: #4077f3;
+$footer-header: #656566;
 
 /* gradients and filters */
 $red-ball-gradient: radial-gradient(
@@ -22,6 +23,8 @@ $purple-ball-gradient: radial-gradient(
   rgba(86, 24, 128, 0.23) 100%
 );
 $red-ball-filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
+$small-red-ball-filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25))
+  blur(2.5px);
 $purple-ball-filter: drop-shadow(3px 6px 27px rgba(177, 118, 217, 0.25))
   blur(5px);
 $light-filter: blur(196px);
