@@ -3,6 +3,8 @@ $nav-links-hover: #8434ba;
 $main-bg-color: #000000;
 $main-font-color: #e4e5ea;
 $purple-light-bg-color: #833ab4;
+$red-light-bg-color: #961a1a;
+$button-bg-color: #4077f3;
 
 /* gradients and filters */
 $red-ball-gradient: radial-gradient(
@@ -22,10 +24,14 @@ $purple-ball-gradient: radial-gradient(
 $red-ball-filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
 $purple-ball-filter: drop-shadow(3px 6px 27px rgba(177, 118, 217, 0.25))
   blur(5px);
-$purple-light-filter: blur(196px);
+$light-filter: blur(196px);
 $ball-backdrop-filter: blur(2px);
 $first-linear-gradient: #fcb045;
 $second-linear-gradient: #ff3f78;
+$right-side-header-gradient: var(
+  --gradient,
+  linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%)
+);
 
 /* font-families */
 $inter-font-family: "Inter", sans-serif;
