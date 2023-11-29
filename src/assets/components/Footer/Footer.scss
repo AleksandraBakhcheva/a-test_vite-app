@@ -1,0 +1,132 @@
+@import "../../styles/General.scss";
+
+.footer {
+  display: flex;
+  margin: 0 9.4rem 1.25rem 9.3rem;
+  color: $main-font-color;
+  justify-content: space-between;
+
+  &__about {
+    text-align: left;
+
+    a {
+      margin-top: 15px;
+    }
+  }
+
+  &__menu {
+    padding-right: 68px;
+    text-align: left;
+
+    &_columns {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 53px;
+
+      a {
+        margin-top: 11px;
+      }
+    }
+  }
+
+  h4 {
+    padding: 25px 0 0;
+    @include font-styling(
+      $inter-font-family,
+      14px,
+      700,
+      normal,
+      0.7px,
+      $footer-header,
+      uppercase
+    );
+  }
+
+  a {
+    display: block;
+    max-width: fit-content;
+    @include font-styling(
+      $inter-font-family,
+      16px,
+      400,
+      normal,
+      0,
+      $main-font-color,
+      none
+    );
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: solid 1px transparent;
+    transition: all 0.5s;
+  }
+
+  &__contacts {
+    text-align: right;
+
+    @media screen and (max-width: 768px) {
+      text-align: left;
+    }
+
+    h5 {
+      padding: 18px 0;
+      @include font-styling(
+        $inter-font-family,
+        16px,
+        500,
+        normal,
+        0,
+        $main-font-color,
+        none
+      );
+    }
+
+    img {
+      padding-bottom: 20px;
+      padding-left: 10px;
+      cursor: pointer;
+    }
+
+    p {
+      @include font-styling(
+        $inter-font-family,
+        16px,
+        400,
+        normal,
+        0,
+        $main-font-color,
+        none
+      );
+    }
+
+    &_rights {
+      padding-top: 68px;
+
+      p,
+      a {
+        @include font-styling(
+          $montserrat-font-family,
+          12px,
+          400,
+          normal,
+          0,
+          $main-font-color,
+          none
+        );
+      }
+
+      a {
+        margin-left: 75px;
+        padding-top: 5px;
+        max-width: fit-content;
+        border-bottom: solid 1px $main-font-color;
+      }
+    }
+  }
+}
+
+@media (any-hover: hover) {
+  footer a:hover {
+    border-bottom: solid 1px $main-font-color;
+    color: $nav-links-hover;
+  }
+}
