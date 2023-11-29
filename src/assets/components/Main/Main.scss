@@ -1,0 +1,171 @@
+@import "../../styles/General.scss";
+
+.main {
+  display: flex;
+  position: relative;
+  margin: 6.25rem 9.375rem;
+  justify-content: space-between;
+
+  .red-light {
+    position: absolute;
+    left: -18%;
+    width: 311px;
+    height: 311px;
+    border-radius: 311px;
+    opacity: 0.7;
+    filter: $light-filter;
+    background-color: $red-light-bg-color;
+  }
+
+  .red-ball {
+    position: absolute;
+    top: 87%;
+    left: 61%;
+    width: 28px;
+    height: 28px;
+    border-radius: 100px;
+    filter: $small-red-ball-filter;
+    backdrop-filter: $ball-backdrop-filter;
+    background: $red-ball-gradient;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    margin: 0 5px;
+  }
+
+  &__left-side {
+    margin-top: -7px;
+    &__first-header {
+      @include font-styling(
+        $inter-font-family,
+        48px,
+        400,
+        normal,
+        0,
+        $main-font-color,
+        none
+      );
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        @include font-styling(
+          $inter-font-family,
+          36px,
+          400,
+          normal,
+          0,
+          $main-font-color,
+          none
+        );
+      }
+    }
+
+    &__second-header {
+      @include font-styling(
+        $inter-font-family,
+        48px,
+        900,
+        normal,
+        0,
+        none,
+        none
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background: linear-gradient(
+        0.25turn,
+        $first-linear-gradient,
+        $second-linear-gradient
+      );
+      text-shadow: $header-shadow;
+    }
+
+    &__text {
+      position: relative;
+      margin-top: 0;
+      padding-top: 30px;
+      @include font-styling(
+        $montserrat-font-family,
+        18px,
+        400,
+        normal,
+        0,
+        $main-font-color,
+        none
+      );
+
+      @media screen and (max-width: 768px) {
+        padding-top: 15px;
+      }
+    }
+  }
+
+  &__right-side {
+    text-align: right;
+
+    &__header {
+      padding-top: 9px;
+      padding-right: 1px;
+      @include font-styling(
+        $inter-font-family,
+        18px,
+        500,
+        normal,
+        0,
+        $main-font-color,
+        none
+      );
+
+      span {
+        text-transform: uppercase;
+        letter-spacing: 0.9px;
+        background: $right-side-header-gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    &__boxes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-top: 39px;
+      gap: 30px;
+
+      h5 {
+        @include font-styling(
+          $inter-font-family,
+          18px,
+          500,
+          normal,
+          0.9px,
+          $main-font-color,
+          uppercase
+        );
+      }
+
+      p {
+        padding-top: 7px;
+        @include font-styling(
+          $montserrat-font-family,
+          16px,
+          400,
+          normal,
+          0,
+          $main-font-color,
+          none
+        );
+      }
+    }
+
+    &__button {
+      padding-top: 3.8rem;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+}
