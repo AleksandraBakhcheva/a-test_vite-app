@@ -1,0 +1,28 @@
+@import "../../styles/General.scss";
+
+div button {
+  width: 262px;
+  height: 61px;
+  text-align: center;
+  border: none;
+  @include font-styling(
+    $inter-font-family,
+    16px,
+    500,
+    normal,
+    0,
+    $main-font-color,
+    none
+  );
+  cursor: pointer;
+  transition: all 0.5s;
+  color: $main-font-color;
+  background-color: $button-bg-color;
+}
+
+@media (any-hover: hover) {
+  div button:hover {
+    color: $nav-links-hover;
+    background-color: $main-font-color;
+  }
+}
