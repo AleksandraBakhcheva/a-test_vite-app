@@ -7,7 +7,7 @@ $red-light-bg-color: #961a1a;
 $button-bg-color: #4077f3;
 $footer-header-color: #656566;
 
-/* gradients and filters */
+/* gradients, filters and shadows */
 $red-ball-gradient: radial-gradient(
   82.3% 82.3% at 27.25% 26.5%,
   rgba(255, 208, 208, 0.54) 0%,
@@ -35,6 +35,7 @@ $right-side-header-gradient: var(
   --gradient,
   linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%)
 );
+$header-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 /* font-families */
 $inter-font-family: "Inter", sans-serif;
