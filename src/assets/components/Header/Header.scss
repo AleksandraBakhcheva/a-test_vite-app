@@ -120,6 +120,10 @@
     .phone {
       margin-top: 3px;
       margin-right: 1.1rem;
+
+      @media screen and (min-width: 769px) and (max-width: 1280px) {
+        margin-right: 0;
+      }
     }
 
     @media screen and (min-width: 769px) and (max-width: 1280px) {

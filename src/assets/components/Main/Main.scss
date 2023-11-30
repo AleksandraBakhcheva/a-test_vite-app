@@ -6,10 +6,6 @@
   padding: 6.25rem 9.375rem;
   justify-content: space-between;
 
-  @media screen and (min-width: 769px) and (max-width: 1280px) {
-    padding: 1rem 3rem;
-  }
-
   .red-light {
     position: absolute;
     left: -18%;
@@ -42,6 +38,10 @@
     background-size: cover;
   }
 
+  @media screen and (min-width: 769px) and (max-width: 1280px) {
+    padding: 1rem 3rem;
+  }
+
   &__left-side {
     margin-top: -7px;
     &__first-header {
@@ -57,15 +57,7 @@
 
       @media screen and (max-width: 768px) {
         width: 100%;
-        @include font-styling(
-          $inter-font-family,
-          36px,
-          400,
-          normal,
-          0,
-          $main-font-color,
-          none
-        );
+        font-size: 36px;
       }
     }
 
