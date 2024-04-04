@@ -1,7 +1,7 @@
 import "./assets/styles/General.scss";
-import Header from "./assets/components/Header/Header";
-import Main from "./assets/components/Main/Main";
-import Footer from "./assets/components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (

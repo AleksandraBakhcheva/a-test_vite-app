@@ -1,11 +1,11 @@
 import "./Header.scss";
 import Media from "../../utils/Media";
 import Nav from "../Nav/Nav";
-import welbexLogo from "../../images/welbex-logo.svg";
-import welbex from "../../images/welbex.svg";
-import tgIcon from "../../images/telegram-icon.svg";
-import vbIcon from "../../images/viber-icon.svg";
-import whatsAppIcon from "../../images/whatsApp-icon.svg";
+import welbexLogo from "../../assets/images/welbex-logo.svg";
+import welbex from "../../assets/images/welbex.svg";
+import tgIcon from "../../assets/images/telegram-icon.svg";
+import vbIcon from "../../assets/images/viber-icon.svg";
+import whatsAppIcon from "../../assets/images/whatsApp-icon.svg";
 
 export default function Header() {
   const { mobileVersion } = Media();

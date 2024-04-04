@@ -1,8 +1,8 @@
 import "./Footer.scss";
 import Media from "../../utils/Media";
-import tgIcon from "../../images/telegram-icon.svg";
-import vbIcon from "../../images/viber-icon.svg";
-import whatsAppIcon from "../../images/whatsApp-icon.svg";
+import tgIcon from "../../assets/images/telegram-icon.svg";
+import vbIcon from "../../assets/images/viber-icon.svg";
+import whatsAppIcon from "../../assets/images/whatsApp-icon.svg";
 
 export default function Footer() {
   const { mobileVersion } = Media();
